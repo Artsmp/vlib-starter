@@ -2,6 +2,8 @@ import { defineUserConfig, viteBundler, defaultTheme } from 'vuepress'
 import { codeBlockPlugin } from '@artsmp/vuepress-plugins'
 import { zh } from './configs/navbar'
 import { zh as sidebarZh } from './configs/sidebar'
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
 import vueDefineOptions from 'unplugin-vue-define-options/vite'
 
 export default defineUserConfig({

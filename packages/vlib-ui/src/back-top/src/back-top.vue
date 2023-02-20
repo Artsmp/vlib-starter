@@ -7,10 +7,6 @@ import { useEventListener } from '@vant/use'
 import { createNamespace } from '../../utils'
 import { throttle } from 'lodash-es'
 
-defineOptions({
-  name: 'VlibBackTop',
-})
-
 const props = defineProps(backTopProps)
 const emitter = defineEmits(['click'])
 
@@ -46,20 +42,27 @@ onMounted(() => {
     target.value = el
   }
 })
-console.log('bem()', bem())
+</script>
+
+<script lang="ts">
+export default {
+  name: 'VlibBackTop',
+}
 </script>
 
 <template>
   <Transition name="van-fade">
-    <div v-if="visible" :class="bem()">
+    <div
+      v-if="visible"
+      :class="bem()"
+      :style="{
+        right: addUnit(props.right),
+        bottom: addUnit(props.bottom),
+      }"
+      @click="handleClick"
+    >
       <slot>
-        <Button
-          type="primary"
-          icon="back-top"
-          round
-          vlib-back-top
-          @click="handleClick"
-        ></Button>
+        <Button type="primary" icon="back-top" round vlib-back-top></Button>
       </slot>
     </div>
   </Transition>

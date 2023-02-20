@@ -14,7 +14,7 @@
     "@vuepress/client": "2.0.0-beta.49",
     "anywhere": "^1.6.0",
     "rimraf": "^4.1.2",
-    "unplugin-vue-define-options": "^1.2.1",
+    "unplugin-vue-define-options": "^1.2.2",
     "vue": "^3.2.47",
     "vuepress": "2.0.0-beta.49"
   },

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { withInstall } from 'vant/es/utils'
 import _BackTop from './src/back-top.vue'
 

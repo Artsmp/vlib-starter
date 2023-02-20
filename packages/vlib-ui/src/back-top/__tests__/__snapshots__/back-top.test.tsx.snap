@@ -1,0 +1,39 @@
+// Vitest Snapshot v1
+
+exports[`BackTop.vue > render 1`] = `
+"<div class=\\"target\\" style=\\"height: 100; overflow: auto;\\">
+  <div style=\\"height: 10000;\\">
+    <transition-stub name=\\"van-fade\\" appear=\\"false\\" persisted=\\"false\\" css=\\"true\\">
+      <div class=\\"vlib-back-top\\" style=\\"right: 100px; bottom: 100px;\\"><button type=\\"button\\" class=\\"van-button van-button--primary van-button--normal van-button--round\\" vlib-back-top=\\"\\">
+          <div class=\\"van-button__content\\"><i class=\\"van-badge__wrapper van-icon van-icon-back-top van-button__icon\\">
+              <!---->
+              <!---->
+              <!---->
+            </i>
+            <!---->
+            <!---->
+          </div>
+        </button></div>
+    </transition-stub>
+  </div>
+</div>"
+`;
+
+exports[`BackTop.vue > 输出快照到单独的文件 1`] = `
+"<div class=\\"target\\" style=\\"height: 100; overflow: auto;\\">
+  <div style=\\"height: 10000;\\">
+    <transition-stub name=\\"van-fade\\" appear=\\"false\\" persisted=\\"false\\" css=\\"true\\">
+      <div class=\\"vlib-back-top\\" style=\\"right: 100px; bottom: 100px;\\"><button type=\\"button\\" class=\\"van-button van-button--primary van-button--normal van-button--round\\" vlib-back-top=\\"\\">
+          <div class=\\"van-button__content\\"><i class=\\"van-badge__wrapper van-icon van-icon-back-top van-button__icon\\">
+              <!---->
+              <!---->
+              <!---->
+            </i>
+            <!---->
+            <!---->
+          </div>
+        </button></div>
+    </transition-stub>
+  </div>
+</div>"
+`;
