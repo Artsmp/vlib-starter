@@ -23,6 +23,6 @@ export function readSource(filePath: string) {
     rawCode: code,
     highlightCode: createMarkdown({
       highlight: resolveHighlighter(lang),
-    }).render('```' + lang + '\n' + code + '\n```'),
+    }).render('```' + lang + '\n\n' + code + '\n\n```'),
   }
 }

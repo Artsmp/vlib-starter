@@ -1,9 +1,13 @@
-import { defineUserConfig, defaultTheme, viteBundler } from 'vuepress'
+import { defineUserConfig, viteBundler, defaultTheme } from 'vuepress'
 import { codeBlockPlugin } from '@artsmp/vuepress-plugins'
+import { zh } from './configs/navbar'
+import { zh as sidebarZh } from './configs/sidebar'
 
 export default defineUserConfig({
+  lang: 'zh-CN',
+  title: '你好， VuePress ！',
+  description: '这是我的第一个 VuePress 站点',
   base: '/vlib-starter/',
-
   locales: {
     '/': {
       lang: 'zh-CN',
@@ -11,24 +15,21 @@ export default defineUserConfig({
       description: 'Vue3 组件库开发模板 & Vue3 组件库实践指南',
     },
   },
-
   bundler: viteBundler({
     viteOptions: {},
     vuePluginOptions: {},
   }),
-
   theme: defaultTheme({
     locales: {
       '/': {
-        navbar: [],
-        sidebar: {},
+        navbar: zh,
+        sidebar: sidebarZh,
         selectLanguageName: '简体中文',
         selectLanguageText: '选择语言',
         selectLanguageAriaLabel: '选择语言',
       },
     },
   }),
-
   pagePatterns: [
     '**/*.md',
     '!.vuepress',
@@ -37,6 +38,5 @@ export default defineUserConfig({
     '../packages/vlib-ui/**/*.md',
     '!../packages/**/node_modules',
   ],
-
   plugins: [codeBlockPlugin()],
 })
