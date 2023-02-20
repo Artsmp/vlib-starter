@@ -35,7 +35,18 @@
 }
 
 .vlib-demo-source {
+  display: grid;
+  grid-template-rows: 0fr;
   border-top: 1px dashed var(--c-border);
+  transition: grid-template-rows 0.2s ease-in-out;
+
+  &-inner {
+    overflow: hidden;
+  }
+
+  &--show {
+    grid-template-rows: 1fr;
+  }
 
   pre[class*='language-'] {
     margin-top: 0;

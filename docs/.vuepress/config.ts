@@ -2,6 +2,7 @@ import { defineUserConfig, viteBundler, defaultTheme } from 'vuepress'
 import { codeBlockPlugin } from '@artsmp/vuepress-plugins'
 import { zh } from './configs/navbar'
 import { zh as sidebarZh } from './configs/sidebar'
+import vueDefineOptions from 'unplugin-vue-define-options/vite'
 
 export default defineUserConfig({
   lang: 'zh-CN',
@@ -16,7 +17,9 @@ export default defineUserConfig({
     },
   },
   bundler: viteBundler({
-    viteOptions: {},
+    viteOptions: {
+      plugins: [vueDefineOptions()],
+    },
     vuePluginOptions: {},
   }),
   theme: defaultTheme({

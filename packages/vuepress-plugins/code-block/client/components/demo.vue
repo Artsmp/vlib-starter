@@ -18,10 +18,14 @@
         </span>
       </div>
       <div
-        v-show="state.isExpand"
         class="vlib-demo-source"
-        v-html="decodeURIComponent(props.highlightCode)"
-      ></div>
+        :class="state.isExpand && 'vlib-demo-source--show'"
+      >
+        <div
+          class="vlib-demo-source-inner"
+          v-html="decodeURIComponent(props.highlightCode)"
+        ></div>
+      </div>
     </div>
   </div>
 </template>

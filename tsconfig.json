@@ -13,6 +13,7 @@
     "target": "ESNext",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "types": ["unplugin-vue-define-options/macros-global" /* ... */]
   }
 }

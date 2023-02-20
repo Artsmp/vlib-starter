@@ -8,5 +8,20 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "peerDependencies": {
+    "vant": "^3.5.0",
+    "vue": "^3.2.0"
+  },
+  "dependencies": {
+    "@vant/use": "^1.4.1",
+    "lodash-es": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/lodash-es": "^4.17.6",
+    "vant": "^4.0.11",
+    "vite": "^4.1.2",
+    "vitest": "^0.28.5",
+    "vue": "^3.2.47"
+  }
 }

@@ -14,11 +14,14 @@
     "@vuepress/client": "2.0.0-beta.49",
     "anywhere": "^1.6.0",
     "rimraf": "^4.1.2",
+    "unplugin-vue-define-options": "^1.2.1",
     "vue": "^3.2.47",
     "vuepress": "2.0.0-beta.49"
   },
   "dependencies": {
+    "@artsmp/vlib-ui": "workspace:^1.0.0",
     "@vuepress/plugin-shiki": "2.0.0-beta.60",
+    "vant": "^4.0.11",
     "vuepress-theme-hope": "2.0.0-beta.177"
   }
 }
