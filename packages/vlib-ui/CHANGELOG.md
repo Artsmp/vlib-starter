@@ -1,5 +1,11 @@
 # @art-test/vlib-ui
 
+## 2.0.2
+
+### Patch Changes
+
+- change package organization
+
 ## 2.0.1
 
 ### Patch Changes

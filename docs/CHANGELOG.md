@@ -1,5 +1,13 @@
 # @art-test/docs
 
+## 1.0.3
+
+### Patch Changes
+
+- change package organization
+- Updated dependencies
+  - @art-test/vlib-ui@2.0.2
+
 ## 1.0.2
 
 ### Patch Changes

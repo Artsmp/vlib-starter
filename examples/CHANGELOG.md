@@ -1,5 +1,13 @@
 # @art-test/examples
 
+## 0.0.3
+
+### Patch Changes
+
+- change package organization
+- Updated dependencies
+  - @art-test/vlib-ui@2.0.2
+
 ## 0.0.2
 
 ### Patch Changes
