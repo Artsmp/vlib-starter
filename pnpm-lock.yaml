@@ -4,8 +4,8 @@ importers:
 
   .:
     specifiers:
-      '@artsmp/eslint-config': workspace:^1.0.0
-      '@artsmp/stylelint-config': workspace:^1.0.0
+      '@art-test/eslint-config': workspace:^1.0.0
+      '@art-test/stylelint-config': workspace:^1.0.0
       '@changesets/changelog-github': ^0.4.8
       '@changesets/cli': ^2.26.0
       '@commitlint/cli': ^17.4.4
@@ -25,8 +25,8 @@ importers:
     dependencies:
       '@vue/runtime-core': 3.2.47
     devDependencies:
-      '@artsmp/eslint-config': link:packages/eslint-config
-      '@artsmp/stylelint-config': link:packages/stylelint-config
+      '@art-test/eslint-config': link:packages/eslint-config
+      '@art-test/stylelint-config': link:packages/stylelint-config
       '@changesets/changelog-github': 0.4.8
       '@changesets/cli': 2.26.0
       '@commitlint/cli': 17.4.4
@@ -45,8 +45,8 @@ importers:
 
   docs:
     specifiers:
-      '@artsmp/vlib-ui': workspace:^1.0.0
-      '@artsmp/vuepress-plugins': workspace:^1.0.0
+      '@art-test/vlib-ui': workspace:^2.0.2
+      '@art-test/vuepress-plugins': workspace:^1.0.1
       '@vuepress/client': 2.0.0-beta.49
       '@vuepress/plugin-shiki': 2.0.0-beta.60
       anywhere: ^1.6.0
@@ -57,12 +57,12 @@ importers:
       vuepress: 2.0.0-beta.49
       vuepress-theme-hope: 2.0.0-beta.177
     dependencies:
-      '@artsmp/vlib-ui': link:../packages/vlib-ui
+      '@art-test/vlib-ui': link:../packages/vlib-ui
       '@vuepress/plugin-shiki': 2.0.0-beta.60
       vant: 4.0.11_vue@3.2.47
       vuepress-theme-hope: 2.0.0-beta.177_idrse6dylxkjvln7xfshtr22ye
     devDependencies:
-      '@artsmp/vuepress-plugins': link:../packages/vuepress-plugins
+      '@art-test/vuepress-plugins': link:../packages/vuepress-plugins
       '@vuepress/client': 2.0.0-beta.49
       anywhere: 1.6.0
       rimraf: 4.1.2
@@ -72,7 +72,7 @@ importers:
 
   examples:
     specifiers:
-      '@artsmp/vlib-ui': workspace:^1.0.0
+      '@art-test/vlib-ui': workspace:^2.0.2
       '@vitejs/plugin-vue': ^4.0.0
       typescript: ^4.9.3
       unplugin-vue-components: ^0.24.0
@@ -81,7 +81,7 @@ importers:
       vue: ^3.2.45
       vue-tsc: ^1.0.24
     dependencies:
-      '@artsmp/vlib-ui': link:../packages/vlib-ui
+      '@art-test/vlib-ui': link:../packages/vlib-ui
       vant: 4.0.11_vue@3.2.47
       vue: 3.2.47
     devDependencies:
@@ -3342,7 +3342,7 @@ packages:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.1.2
+      vite: 4.1.2_sass@1.58.3
       vue: 3.2.47
     dev: true
 
