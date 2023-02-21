@@ -1,5 +1,15 @@
 # @art-test/docs
 
+## 1.0.4
+
+### Patch Changes
+
+- 2767f79: test github action
+- 3460e2c: test github action
+- Updated dependencies [2767f79]
+- Updated dependencies [3460e2c]
+  - @art-test/vlib-ui@2.0.3
+
 ## 1.0.3
 
 ### Patch Changes

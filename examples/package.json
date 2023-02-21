@@ -1,7 +1,7 @@
 {
   "name": "@art-test/examples",
   "private": true,
-  "version": "0.0.3",
+  "version": "0.0.4",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@art-test/vlib-ui": "workspace:^2.0.2",
+    "@art-test/vlib-ui": "workspace:^2.0.3",
     "vant": "^4.0.11",
     "vue": "^3.2.45"
   },
