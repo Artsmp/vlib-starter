@@ -1,7 +1,7 @@
 {
   "name": "@artsmp/examples",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.2",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@artsmp/vlib-ui": "workspace:^1.0.0",
+    "@artsmp/vlib-ui": "workspace:^2.0.1",
     "vant": "^4.0.11",
     "vue": "^3.2.45"
   },

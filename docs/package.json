@@ -1,6 +1,6 @@
 {
   "name": "@artsmp/docs",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,7 @@
     "vuepress": "2.0.0-beta.49"
   },
   "dependencies": {
-    "@artsmp/vlib-ui": "workspace:^1.0.0",
+    "@artsmp/vlib-ui": "workspace:^2.0.1",
     "@vuepress/plugin-shiki": "2.0.0-beta.60",
     "vant": "^4.0.11",
     "vuepress-theme-hope": "2.0.0-beta.177"
