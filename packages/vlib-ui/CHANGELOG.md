@@ -1,4 +1,4 @@
-# @artsmp/vlib-ui
+# @art-test/vlib-ui
 
 ## 2.0.1
 

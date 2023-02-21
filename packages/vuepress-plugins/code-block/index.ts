@@ -5,7 +5,7 @@ import { resolveHtmlBlock, resolveScriptSetup } from './node'
 export const codeBlockPlugin = (): Plugin => {
   const store = new Map<string, Set<string>>()
   return {
-    name: '@artsmp/vuepress-plugin-code-block',
+    name: '@art-test/vuepress-plugin-code-block',
     clientConfigFile: resolve(__dirname, './client/client-config.ts'),
     extendsMarkdown(md) {
       resolveHtmlBlock(md, store)

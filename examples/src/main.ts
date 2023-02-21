@@ -3,10 +3,10 @@ import { createApp } from 'vue'
 
 // 测试全局导入
 // import VantUI from 'vant'
-// import VlibUI from '@artsmp/vlib-ui'
+// import VlibUI from '@art-test/vlib-ui'
 // import App from './App.vue'
 // import 'vant/lib/index.css'
-// import '@artsmp/vlib-ui/dist/index.css'
+// import '@art-test/vlib-ui/dist/index.css'
 // const app = createApp(App)
 // app.use(VantUI)
 // app.use(VlibUI)

@@ -1,4 +1,4 @@
-# @artsmp/examples
+# @art-test/examples
 
 ## 0.0.2
 
@@ -6,11 +6,11 @@
 
 - use changelog
 - Updated dependencies
-  - @artsmp/vlib-ui@2.0.1
+  - @art-test/vlib-ui@2.0.1
 
 ## 0.0.1
 
 ### Patch Changes
 
 - Updated dependencies
-  - @artsmp/vlib-ui@2.0.0
+  - @art-test/vlib-ui@2.0.0

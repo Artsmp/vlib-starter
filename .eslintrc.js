@@ -1,4 +1,4 @@
 module.exports = {
   root: true,
-  extends: ['@artsmp/eslint-config'],
+  extends: ['@art-test/eslint-config'],
 }

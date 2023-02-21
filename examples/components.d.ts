@@ -14,6 +14,6 @@ declare module '@vue/runtime-core' {
     RouterView: typeof import('vue-router')['RouterView']
     VanCell: typeof import('vant/es')['Cell']
     VanCellGroup: typeof import('vant/es')['CellGroup']
-    VlibBackTop: typeof import('@artsmp/vlib-ui/es')['BackTop']
+    VlibBackTop: typeof import('@art-test/vlib-ui/es')['BackTop']
   }
 }

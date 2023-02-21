@@ -1,4 +1,4 @@
-# @artsmp/docs
+# @art-test/docs
 
 ## 1.0.2
 
@@ -6,11 +6,11 @@
 
 - use changelog
 - Updated dependencies
-  - @artsmp/vlib-ui@2.0.1
+  - @art-test/vlib-ui@2.0.1
 
 ## 1.0.1
 
 ### Patch Changes
 
 - Updated dependencies
-  - @artsmp/vlib-ui@2.0.0
+  - @art-test/vlib-ui@2.0.0

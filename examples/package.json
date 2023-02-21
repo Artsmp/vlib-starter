@@ -1,15 +1,15 @@
 {
-  "name": "@artsmp/examples",
+  "name": "@art-test/examples",
   "private": true,
   "version": "0.0.2",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc && vite build",
+    "build-only": "vue-tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@artsmp/vlib-ui": "workspace:^2.0.1",
+    "@art-test/vlib-ui": "workspace:^2.0.1",
     "vant": "^4.0.11",
     "vue": "^3.2.45"
   },

@@ -31,9 +31,9 @@ function getSideEffects(
   if (!importStyle || isSSR) return
 
   if (importStyle === 'scss') {
-    return `@artsmp/vlib-ui/${moduleType}/${dirName}/style/scss`
+    return `@art-test/vlib-ui/${moduleType}/${dirName}/style/scss`
   } else {
-    return `@artsmp/vlib-ui/${moduleType}/${dirName}/style/index`
+    return `@art-test/vlib-ui/${moduleType}/${dirName}/style/index`
   }
 }
 
@@ -52,7 +52,7 @@ export function VlibResolver(
         const partialName = name.slice(4)
         return {
           name: partialName,
-          from: `@artsmp/vlib-ui/${moduleType}`,
+          from: `@art-test/vlib-ui/${moduleType}`,
           sideEffects: getSideEffects(kebabCase(partialName), options),
         }
       }
