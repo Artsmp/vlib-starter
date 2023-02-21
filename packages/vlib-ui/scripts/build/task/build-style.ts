@@ -71,7 +71,7 @@ const buildStyleModules = async () => {
         sourceMap: true,
       }),
     ],
-    external: [/./],
+    external: [/./], // 不去 resolved 以 . 开头的模块，因为 css 在这个时候还未被打包出来
     treeshake: false,
   })
 
@@ -83,12 +83,13 @@ const buildStyleModules = async () => {
       preserveModules: true,
       preserveModulesRoot: 'src',
       sourcemap: true,
-      entryFileNames: (info) => {
-        return `${info.facadeModuleId
-          ?.split('src')[1]
-          .split(info.name)[0]
-          .slice(1)}${info.name}.mjs`
-      },
+      // entryFileNames: (info) => {
+      //   return `${info.facadeModuleId
+      //     ?.split('src')[1]
+      //     .split(info.name)[0]
+      //     .slice(1)}${info.name}.mjs`
+      // },
+      entryFileNames: '[name].mjs',
     }),
     bundle.write({
       format: 'cjs',
@@ -98,12 +99,13 @@ const buildStyleModules = async () => {
       preserveModulesRoot: 'src',
       sourcemap: true,
       // TODO 不知道为啥 name 不包含相对路径
-      entryFileNames: (info) => {
-        return `${info.facadeModuleId
-          ?.split('src')[1]
-          .split(info.name)[0]
-          .slice(1)}${info.name}.js`
-      },
+      // entryFileNames: (info) => {
+      //   return `${info.facadeModuleId
+      //     ?.split('src')[1]
+      //     .split(info.name)[0]
+      //     .slice(1)}${info.name}.js`
+      // },
+      entryFileNames: '[name].js',
       paths: generatePaths(),
     }),
   ])

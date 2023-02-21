@@ -8,6 +8,7 @@ importers:
       '@artsmp/stylelint-config': workspace:^1.0.0
       '@commitlint/cli': ^17.4.4
       '@commitlint/config-conventional': ^17.4.4
+      '@vue/runtime-core': ^3.2.47
       commitizen: ^4.3.0
       cz-conventional-changelog: ^3.3.0
       eslint: ^8.34.0
@@ -19,6 +20,8 @@ importers:
       typescript: ^4.9.5
       unplugin-vue-define-options: ^1.2.2
       vue: ^3.2.47
+    dependencies:
+      '@vue/runtime-core': 3.2.47
     devDependencies:
       '@artsmp/eslint-config': link:packages/eslint-config
       '@artsmp/stylelint-config': link:packages/stylelint-config

@@ -45,26 +45,26 @@ describe('BackTop.vue', async () => {
     // 输出快照到单独的文件
     expect(wrapper.html()).toMatchSnapshot()
   })
-  test('target不存在', () => {
-    // const fn = () => {
-    //   mount(
-    //     () => {
-    //       return (
-    //         <div class={'target'} style={{ height: 100, overflow: 'auto' }}>
-    //           <div style={{ height: 10000 }}>
-    //             <BackTop
-    //               target=".notExist"
-    //               visibilityHeight={300}
-    //               bottom={100}
-    //               right={100}
-    //             />
-    //           </div>
-    //         </div>
-    //       )
-    //     },
-    //     { attachTo: document.body }
-    //   )
-    // }
-    // expect(fn()).toThrowErrorMatchingInlineSnapshot()
+  test.fails('target不存在', () => {
+    const fn = () => {
+      mount(
+        () => {
+          return (
+            <div class={'target'} style={{ height: 100, overflow: 'auto' }}>
+              <div style={{ height: 10000 }}>
+                <BackTop
+                  target=".notExist"
+                  visibilityHeight={300}
+                  bottom={100}
+                  right={100}
+                />
+              </div>
+            </div>
+          )
+        },
+        { attachTo: document.body }
+      )
+    }
+    expect(fn()).toThrowErrorMatchingInlineSnapshot()
   })
 })
